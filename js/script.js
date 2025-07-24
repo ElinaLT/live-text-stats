@@ -1,6 +1,7 @@
 const textInput = document.getElementById('text-input');
 const charCount = document.getElementById('char-count');
 const wordCount = document.getElementById('word-count');
+const clearButton = document.getElementById('clear-button');
 
 function updateCounts() {
     const text = textInput.value;
@@ -12,5 +13,9 @@ function updateCounts() {
 }
 
 textInput.addEventListener('input', updateCounts);
+clearButton.addEventListener('click', () => {
+    textInput.value = '';
+    updateCounts();
+})
 
 updateCounts();
