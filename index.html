@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 1. Document metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Text Stats</title>
+
+  <!-- 2. Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 3. Main container -->
+  <div class="container">
+    <!-- 4. App title -->
+    <h1>Live Text Stats</h1>
+
+    <!-- 5. Text input area -->
+    <textarea
+      id="text-input"
+      rows="8"
+      placeholder="Type your text here…"
+    ></textarea>
+
+    <!-- 6. Statistics display -->
+    <div class="stats">
+      <p>Characters: <span id="char-count">0</span></p>
+      <p>Words: <span id="word-count">0</span></p>
+    </div>
+  </div>
+
+  <!-- 7. Include JavaScript logic -->
+  <script src="js/script.js"></script>
+</body>
+</html>
